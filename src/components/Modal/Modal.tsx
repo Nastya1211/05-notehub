@@ -24,7 +24,7 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
     };
   }, [isOpen, onClose]);
 
-  if (isOpen) return null;
+  if (!isOpen) return null;
 
   return createPortal(
     <div
